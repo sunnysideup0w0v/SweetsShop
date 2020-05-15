@@ -30,7 +30,7 @@ category.forEach(function(el){
 })
 
 input.onkeyup = function(){
-    let value = input.value;
+    let value = input.value.toUpperCase();
     category.forEach(function(el){
         items.forEach(function(item){
             item.classList.remove("on")
